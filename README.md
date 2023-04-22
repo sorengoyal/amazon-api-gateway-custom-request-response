@@ -13,9 +13,9 @@ This sample code is made available under the MIT-0 license. See the LICENSE file
 To deploy this example into your AWS account, either use the AWS CloudFormation console or the following AWS CLI commands:
 
 ```shell
-aws cloudformation package --template-file echo.template --output-template-file packaged.template --s3-bucket <YOUR S3 BUCKET>
+aws cloudformation package --template-file echo.template --output-template-file packaged.template --s3-bucket earthdaily-deployments
 
-aws cloudformation deploy --template-file packaged.template --stack-name <YOUR STACK NAME> --capabilities CAPABILITY_IAM
+aws cloudformation deploy --template-file packaged.template --stack-name AmazonApiGatewayCustomerRequestResponse --capabilities CAPABILITY_IAM
 ```
 
 Replacing `<YOUR S3 BUCKET>` with the name of an S3 bucket that should hold the deployment artefacts and `<YOUR STACK NAME>` with a name of your choice for the resulting CloudFormation stack.

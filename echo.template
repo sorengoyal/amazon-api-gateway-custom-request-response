@@ -50,7 +50,7 @@ Resources:
             Path: /{proxy+}
             RestApiId: !Ref Api
       Handler: echo.handler
-      Runtime: python3.6
+      Runtime: python3.9
 
 Outputs:
   Endpoint:
